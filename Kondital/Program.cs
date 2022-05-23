@@ -1,6 +1,6 @@
-﻿double kilo = WriteDouble("Weigt in kilo: ");
-double hvilePuls = WriteDouble("Hvilepuls: ");
-double maxPuls = WriteDouble("Maxpuls: ");
+﻿//double kilo = WriteDouble("Weigt in kilo: ");
+//double hvilePuls = WriteDouble("Hvilepuls: ");
+//double maxPuls = WriteDouble("Maxpuls: ");
 
 Kondital test = new Kondital(WriteDouble("Weigt in kilo: "), WriteDouble("Hvilepuls: "), WriteDouble("Maxpuls: "));
 Console.WriteLine(test.BeregnKondital());
