@@ -3,7 +3,8 @@
 //double maxPuls = WriteDouble("Maxpuls: ");
 
 Kondital test = new Kondital(WriteDouble("Weigt in kilo: "), WriteDouble("Hvilepuls: "), WriteDouble("Maxpuls: "));
-Console.WriteLine(test.BeregnKondital());
+Console.WriteLine("Kondital: {0:F2}", test.BeregnKondital());
+Console.WriteLine("Kondital: {0:F2}", test.BeregnIltoptagelse());
 
 static double WriteDouble(string text)
 {
@@ -38,8 +39,11 @@ class Kondital
     {
         return (_maxPuls/ _hvilePuls) * 15.3;
     }
+    public double BeregnIltoptagelse()
+    {
+        return (BeregnKondital() * _kilo) / 1000;
+    }
 }
-
 
 
 
