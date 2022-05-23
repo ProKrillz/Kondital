@@ -1,11 +1,6 @@
-﻿//double kilo = WriteDouble("Weigt in kilo: ");
-//double hvilePuls = WriteDouble("Hvilepuls: ");
-//double maxPuls = WriteDouble("Maxpuls: ");
-
-Kondital test = new Kondital(WriteDouble("Weigt in kilo: "), WriteDouble("Hvilepuls: "), WriteDouble("Maxpuls: "));
+﻿Kondital test = new Kondital(WriteDouble("Weigt in kilo: "), WriteDouble("Hvilepuls: "), WriteDouble("Maxpuls: "));
 Console.WriteLine("Kondital: {0:F2}", test.BeregnKondital());
 Console.WriteLine("Kondital: {0:F2}", test.BeregnIltoptagelse());
-
 
 static double WriteDouble(string text)
 {
@@ -23,9 +18,7 @@ static double WriteDouble(string text)
         }
     }
 }
-/// <summary>
-/// Class der gemmer indpus og udskriver kondital og ilt optagelse.
-/// </summary>
+
 class Kondital
 {
     double _kilo;
