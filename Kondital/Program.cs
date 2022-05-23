@@ -1,6 +1,6 @@
 ﻿Kondital test = new Kondital(WriteDouble("Weigt in kilo: "), WriteDouble("Hvilepuls: "), WriteDouble("Maxpuls: "));
 Console.WriteLine("Kondital: {0:F2}", test.BeregnKondital());
-Console.WriteLine("Kondital: {0:F2}", test.BeregnIltoptagelse());
+Console.WriteLine("Iltoptagelse: {0:F2}", test.BeregnIltoptagelse());
 
 static double WriteDouble(string text)
 {
