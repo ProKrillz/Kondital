@@ -6,6 +6,7 @@ Kondital test = new Kondital(WriteDouble("Weigt in kilo: "), WriteDouble("Hvilep
 Console.WriteLine("Kondital: {0:F2}", test.BeregnKondital());
 Console.WriteLine("Kondital: {0:F2}", test.BeregnIltoptagelse());
 
+
 static double WriteDouble(string text)
 {
     double value;
@@ -22,7 +23,9 @@ static double WriteDouble(string text)
         }
     }
 }
-
+/// <summary>
+/// Class der gemmer indpus og udskriver kondital og ilt optagelse.
+/// </summary>
 class Kondital
 {
     double _kilo;
@@ -35,10 +38,18 @@ class Kondital
         this._hvilePuls = hvilePuls;
         this._maxPuls = maxPuls;
     }
+    /// <summary>
+    /// Metode
+    /// </summary>
+    /// <returns>Kondital</returns>
     public double BeregnKondital()
     {
         return (_maxPuls/ _hvilePuls) * 15.3;
     }
+    /// <summary>
+    /// Metode 
+    /// </summary>
+    /// <returns>Iltoptagelse</returns>
     public double BeregnIltoptagelse()
     {
         return (BeregnKondital() * _kilo) / 1000;
